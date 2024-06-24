@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- Includi Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Login to your account</h1>
+        <p style="display: inline-block; margin-left: 50px;">Don't have an account yet?</p>
+        <p onclick="window.location.href='https://rick.nerial.uk/video.mp4'" style="display: inline-block; color: violet;">Signup</p>
+        <div class="input-group">
+            <!-- Aggiungi un'icona all'etichetta dell'utente -->
+            <label class="label"><i id="user" class="fas fa-user"></i> Username</label>
+            <input type="text" class="input" name="username"> 
+        </div>
+        <div class="input-group">
+            <!-- Aggiungi un'icona a forma di chiave all'etichetta della password -->
+            <label class="label"><i class="fas fa-key"></i> Password</label>        
+            <input type="password" class="input" name="password">
+        </div>
+        <label style="color: white;"><input style="margin-left: 25px;" type="checkbox" placeholder="Remember me"> Remember me </label>
+        <p style="text-align: right; display: inline-block; margin-left: 60px; font-size: 14px; color: violet;" class="forgot" onclick="window.location.href='https://rick.nerial.uk/video.mp4'">Forgot your password?</p> 
+        <button onclick="window.location.href='https://rick.nerial.uk/video.mp4'" style="width: 350px; text-align: center; margin-left: 20px;" class="button-64" style="width: 110px; margin-left: 1px;">Login</button>
+        <div style="text-align: left; margin-left: 19px;">
+        </div>
+    </div>
+
+    <script>
+        // JavaScript rimane invariato
+        const inputs = document.querySelectorAll('.input');
+
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.previousElementSibling.classList.add('label-focus');
+            });
+
+            input.addEventListener('blur', () => {
+                if (input.value === '') {
+                    input.previousElementSibling.classList.remove('label-focus');
+                }
+            });
+        });
+    </script>
+</body> 
+</html>
+
+
+

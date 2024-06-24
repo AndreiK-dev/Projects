@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pedro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Pedro.jpg">
+</head>
+<body>
+    <h1>Pedro</h1>
+    <br>
+    <div id="pedroDiv" class="Pedro">
+        <img src="Pedro.jpg" class="wrapper" id="pedroImg">
+    </div>
+    <audio id="myAudio" class="audio" src="Pedro.mp3" controls loop></audio>
+        <script>
+           const audio = document.getElementById('myAudio');
+const pedroImage = document.getElementById('pedroImg');
+const pedroDiv = document.getElementById('pedroDiv');
+
+// Prevent animations from playing when the site loads
+pedroDiv.classList.remove('Pedro');
+pedroImage.classList.remove('wrapper');
+
+audio.addEventListener('play', () => {
+    pedroDiv.classList.add('Pedro');
+    pedroImage.classList.add('wrapper');
+});
+
+audio.addEventListener('pause', () => {
+    pedroDiv.classList.remove('Pedro');
+    pedroImage.classList.remove('wrapper');
+});
+        </script>
+        </body>
+</html>

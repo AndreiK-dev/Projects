@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+}
+
+.Pedro {
+ animation: bounce 200ms linear infinite alternate;
+}
+
+@keyframes bounce {
+    to { transform: translateY(20px); }
+}
+
+
+@keyframes spin {
+    to { transform: rotate(-1turn); }
+}
+
+.wrapper {
+     animation: spin 10s linear infinite;
+}
+
+.audio {
+    display: block;
+    margin: 100px auto;
+    width: 50%;
+    padding: 10px;
+    background-color: #292929;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pedroImg {
+    scale: 1.1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#pedroDiv {
+    scale: 1.1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+}
