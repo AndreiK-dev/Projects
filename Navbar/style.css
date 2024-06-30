@@ -6,18 +6,6 @@ body {
     margin-top: 80px;
     padding: 30px;
 }
-
-main {
-    color: rgb(0, 0, 0);
-    border: 2px;
-    border-color: orange;
-    border-radius: 10px;
-    height: 90px;
-    width: 500px;
-    background-color: rgba(248, 114, 4, 0.747);
-    text-align: center;
-    margin: auto;
-}
 header {
     background-color: white;
     position: fixed;
