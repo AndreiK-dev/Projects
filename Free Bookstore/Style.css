@@ -6,7 +6,7 @@ body {
     padding: 0;
     background-image: url(background.jpg);
     background-size: cover; /* Ensure the background covers the entire page */
-    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    background-attachment: fixed;
     background-position: center left; /* Position the background to the left */
     color: #ffffff; /* Set default text color to white for better readability */
 }
@@ -65,7 +65,6 @@ main {
     padding: 40px; /* Add padding for better spacing */
     border-radius: 10px; /* Rounded corners for better aesthetics */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
-
     margin-top: 105px;
 }
 
@@ -118,6 +117,28 @@ footer nav ul li a {
     text-decoration: none;
     color: #333;
 }
-
+.Search {
+    margin-right: 615px;
+    width: 600px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.categories{
+display: flex;
+flex-wrap: wrap;
+gap: 23px;
+margin-top: 150px;
+}
+.categories a {
+    text-decoration: none;
+    color: white;
+}
+.categories a:hover{
+    text-decoration: underline;
+    color: rgb(126, 255, 206);
+}
 
 
